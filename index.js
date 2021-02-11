@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
     var change_img_time = 4000,
@@ -23,10 +24,8 @@ $(document).ready(function() {
 
         dotItems.removeClass('active')
             .eq(i).addClass('active');
-
         listItems.fadeOut(transition_speed)
             .eq(i).fadeIn(transition_speed);
-
         current = i;
 
         //resets time interval if user clicks on slider dot; then begin automated slider
@@ -52,3 +51,4 @@ $(document).ready(function() {
     //initialize slider on load
     moveTo('next');
 });
+
